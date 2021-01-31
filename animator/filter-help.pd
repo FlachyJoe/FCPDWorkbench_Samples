@@ -1,0 +1,9 @@
+#N canvas 577 494 450 300 12;
+#X text 73 40 Same as [route] but keep 1st atom;
+#X obj 140 112 filter foo;
+#X obj 140 141 print;
+#X msg 100 70 foo bah;
+#X msg 191 70 bah foo;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
