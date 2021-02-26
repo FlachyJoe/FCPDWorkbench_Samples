@@ -1,0 +1,40 @@
+#N canvas 479 297 621 412 12;
+#X msg 260 100 Length 40 Height 25 Width 10;
+#X obj 330 190 fc_placement;
+#X obj 330 220 list prepend Placement;
+#X obj 260 250 list append;
+#X obj 260 130 t a b;
+#X obj 260 279 fc_object Part Box;
+#X obj 330 160 fc_vector 5 -10 0;
+#X obj 120 330 fc_setObjectProperty Placement;
+#X obj 120 290 fc_placement;
+#X obj 120 260 fc_vector 0 0 0;
+#X obj 120 80 vsl 15 128 -100 100 0 0 empty empty X 0 -9 0 10 #fcfcfc
+#000000 #000000 6700 1;
+#X obj 150 80 vsl 15 128 -100 100 0 0 empty empty Y 0 -9 0 10 #fcfcfc
+#000000 #000000 8900 1;
+#X obj 180 80 vsl 15 128 -100 100 0 0 empty empty Z 0 -9 0 10 #fcfcfc
+#000000 #000000 4300 1;
+#X obj 140 230 t b f;
+#X obj 190 230 t b f;
+#X obj 260 30 bng 24 250 50 0 empty empty 1/\ Click\ to\ create 27
+7 0 12 #fcfcfc #000000 #000000;
+#X text 120 30 2/ drag to move;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 1;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 4 1 6 0;
+#X connect 5 0 7 1;
+#X connect 6 0 1 0;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 9 0;
+#X connect 11 0 13 0;
+#X connect 12 0 14 0;
+#X connect 13 0 10 0;
+#X connect 13 1 9 1;
+#X connect 14 0 10 0;
+#X connect 14 1 9 2;
+#X connect 15 0 0 0;
