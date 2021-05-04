@@ -1,4 +1,4 @@
-#N canvas 773 547 473 300 12;
+#N canvas 667 464 529 300 12;
 #X msg 90 110 10;
 #X msg 130 110 20;
 #X msg 170 110 30;
@@ -8,6 +8,9 @@
 #X obj 340 110 fc_vector 0 0 1;
 #X obj 90 70 t b b b b b;
 #X obj 90 150 part/makeBox;
+#X msg 210 40 20 50 20 Vector 10 0 0 Vector 0 0 1;
+#X text 80 10 with objects;
+#X text 210 10 with message;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 2 0 7 2;
@@ -19,3 +22,4 @@
 #X connect 6 2 2 0;
 #X connect 6 3 4 0;
 #X connect 6 4 5 0;
+#X connect 8 0 7 0;
