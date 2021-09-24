@@ -28,6 +28,15 @@ Use the [clone] object to parallelize 3d object creation.
   * [fc_placement]
   * [draft/make_bspline]
 
+## random-tiles
+Another [clone] demo which show how to send data to instances.
+
+  * [fc_byLabel]
+  * [fc_copy]
+  * [fc_translate]
+  * [fc_getObjectProperty]
+  * [fc_setSketchConstraint]
+
 ## animate.pd
 Select a FreeCAD object and see an animate move.
 
