@@ -4,6 +4,8 @@ You can find here some demo to start with FCPDWorkbench. Directories store relat
 
 Below is the list of sample with the used objects.
 
+**WARNING : these files are not compatible with the current FCPDWorkbench version, please use them with [v0.1](https://github.com/FlachyJoe/FCPDWorkbench/tree/v0.1). An upgrade of the demo is in progress.**
+
 ## 3d keyboard:
 Select the key in FreeCAD and ear sound from Pure-Data
 
