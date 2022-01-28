@@ -1,4 +1,4 @@
-#N canvas 552 170 762 708 12;
+#N canvas 557 171 762 708 12;
 #X obj 65 395 line;
 #X obj 65 35 inlet;
 #X obj 65 365 pack f f;
@@ -15,7 +15,7 @@
 #X obj 416 395 line;
 #X obj 416 365 pack f f;
 #X obj 65 65 unpack s s s f f f s f f f;
-#X obj 135 585 fc_setObjectProperty Placement;
+#X obj 140 630 fc_setObjectProperty Placement;
 #X obj 135 555 pack s s f f f s f f f;
 #X obj 459 29 loadbang;
 #X text 65 5 object new placement;
@@ -32,6 +32,7 @@
 #X obj 45 130 symbol;
 #X obj 70 460 t b f;
 #X obj 30 170 t b b b b b b s;
+#X obj 140 590 t b a;
 #X connect 0 0 31 0;
 #X connect 1 0 15 0;
 #X connect 2 0 0 0;
@@ -61,7 +62,7 @@
 #X connect 15 7 25 1;
 #X connect 15 8 26 1;
 #X connect 15 9 27 1;
-#X connect 17 0 16 0;
+#X connect 17 0 33 0;
 #X connect 18 0 21 0;
 #X connect 21 0 0 2;
 #X connect 21 0 5 2;
@@ -77,7 +78,7 @@
 #X connect 27 0 14 0;
 #X connect 28 0 17 0;
 #X connect 29 0 30 0;
-#X connect 29 1 16 1;
+#X connect 29 1 16 2;
 #X connect 30 0 32 0;
 #X connect 31 0 28 0;
 #X connect 31 1 17 2;
@@ -88,3 +89,5 @@
 #X connect 32 4 26 0;
 #X connect 32 5 27 0;
 #X connect 32 6 28 1;
+#X connect 33 0 16 0;
+#X connect 33 1 16 1;
