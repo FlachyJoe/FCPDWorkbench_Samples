@@ -1,17 +1,28 @@
-#N canvas 569 282 550 413 12;
-#X msg 100 110 10;
-#X obj 280 150 fc_placement;
-#X obj 100 10 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
-#X obj 230 110 fc_vector 50 0 0;
-#X obj 100 34 t b b b;
-#X obj 360 110 fc_rotation 45 45 0;
-#X obj 100 190 draft/make_circle;
-#X connect 0 0 6 0;
-#X connect 1 0 6 1;
-#X connect 2 0 4 0;
-#X connect 3 0 1 0;
-#X connect 4 0 0 0;
-#X connect 4 1 3 0;
-#X connect 4 2 5 0;
-#X connect 5 0 1 1;
+#N canvas 476 199 716 257 12;
+#X msg 10 200 10;
+#X obj 10 10 bng 15 250 50 0 empty empty click\ me\ ! 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 10 30 t b b b;
+#X obj 10 230 draft/make_circle;
+#X obj 40 120 XYZvector 50 0 0;
+#X obj 40 170 placement;
+#X obj 170 70 YPRrotation 45 45 0;
+#X text 80 30 bang right to left;
+#X text 320 70 rotation from Yaw Pitch Roll;
+#X text 320 90 a bang in first inlet ouputs the value set by arguments
+;
+#X text 170 120 vector from coordinates;
+#X text 170 140 a bang in first inlet ouputs the value set by arguments
+;
+#X text 50 200 PD message as radius;
+#X text 120 170 compute a placement from position and rotation;
+#X text 140 230 ask FC to create the draft object. RMB->Help for more
+info;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 1 4 0;
+#X connect 2 2 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 1;
+#X connect 6 0 5 1;

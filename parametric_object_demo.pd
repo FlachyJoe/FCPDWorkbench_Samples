@@ -1,40 +1,64 @@
-#N canvas 479 297 621 412 12;
-#X msg 260 100 Length 40 Height 25 Width 10;
-#X obj 330 190 fc_placement;
-#X obj 330 220 list prepend Placement;
-#X obj 260 250 list append;
-#X obj 260 130 t a b;
-#X obj 260 279 fc_object Part Box;
-#X obj 330 160 fc_vector 5 -10 0;
-#X obj 120 330 fc_setObjectProperty Placement;
-#X obj 120 290 fc_placement;
-#X obj 120 260 fc_vector 0 0 0;
-#X obj 120 80 vsl 15 128 -100 100 0 0 empty empty X 0 -9 0 10 #fcfcfc
-#000000 #000000 6700 1;
-#X obj 150 80 vsl 15 128 -100 100 0 0 empty empty Y 0 -9 0 10 #fcfcfc
-#000000 #000000 8900 1;
-#X obj 180 80 vsl 15 128 -100 100 0 0 empty empty Z 0 -9 0 10 #fcfcfc
-#000000 #000000 4300 1;
-#X obj 140 230 t b f;
-#X obj 190 230 t b f;
-#X obj 260 30 bng 24 250 50 0 empty empty 1/\ Click\ to\ create 27
+#N canvas 221 264 903 444 12;
+#X msg 510 190 Length 40 Height 25 Width 10;
+#X obj 470 130 list prepend Placement;
+#X obj 470 160 t a b;
+#X obj 470 310 fc_object Part Box;
+#X obj 20 360 fc_setObjectProperty Placement;
+#X obj 20 80 vsl 15 128 -100 100 0 1 empty empty X 0 -9 0 10 #fcfcfc
+#000000 #000000 6400 1;
+#X obj 50 80 vsl 15 128 -100 100 0 1 empty empty Y 0 -9 0 10 #fcfcfc
+#000000 #000000 6400 1;
+#X obj 80 80 vsl 15 128 -100 100 0 1 empty empty Z 0 -9 0 10 #fcfcfc
+#000000 #000000 6400 1;
+#X obj 40 230 t b f;
+#X obj 90 230 t b f;
+#X obj 470 30 bng 24 250 50 0 empty empty 1/\ Click\ to\ create 27
 7 0 12 #fcfcfc #000000 #000000;
-#X text 120 30 2/ drag to move;
-#X connect 0 0 4 0;
+#X text 20 30 2/ drag to move;
+#X obj 470 70 XYZvector 5 -10 0;
+#X obj 470 100 placement;
+#X obj 20 260 XYZvector 0 0 0;
+#X obj 20 290 placement;
+#X obj 470 220 list append;
+#X obj 470 249 t b a;
+#X obj 20 320 t b a;
+#X text 610 70 Position;
+#X text 610 100 placement from position;
+#X text 640 130 property name;
+#X text 640 160 fork to bang then any;
+#X text 720 190 other properties setting;
+#X text 570 220 concatenate to the message;
+#X text 610 250 fill right inlet before activity bang;
+#X text 660 280 show final message in PD console;
+#X obj 610 280 print;
+#X text 610 310 ask FreeCAD to create the Box;
+#X text 140 230 2d and 3rd sliders triggers the first;
+#X text 140 260 because only first inlet is "hot";
+#X text 100 320 fill right inlet before activity bang;
+#X text 100 290 placement from position;
+#X text 250 360 set Placement property of the 3rd inlet's object;
+#X text 250 390 4th inlet is for property name if not already set as
+argument;
+#X connect 0 0 16 1;
 #X connect 1 0 2 0;
-#X connect 2 0 3 1;
-#X connect 3 0 5 0;
-#X connect 4 0 3 0;
-#X connect 4 1 6 0;
-#X connect 5 0 7 1;
-#X connect 6 0 1 0;
-#X connect 8 0 7 0;
-#X connect 9 0 8 0;
-#X connect 10 0 9 0;
-#X connect 11 0 13 0;
-#X connect 12 0 14 0;
-#X connect 13 0 10 0;
-#X connect 13 1 9 1;
-#X connect 14 0 10 0;
-#X connect 14 1 9 2;
-#X connect 15 0 0 0;
+#X connect 2 0 16 0;
+#X connect 2 1 0 0;
+#X connect 3 1 4 2;
+#X connect 5 0 14 0;
+#X connect 6 0 8 0;
+#X connect 7 0 9 0;
+#X connect 8 0 5 0;
+#X connect 8 1 14 1;
+#X connect 9 0 5 0;
+#X connect 9 1 14 2;
+#X connect 10 0 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 1 0;
+#X connect 14 0 15 0;
+#X connect 15 0 18 0;
+#X connect 16 0 17 0;
+#X connect 17 0 3 0;
+#X connect 17 1 3 1;
+#X connect 17 1 27 0;
+#X connect 18 0 4 0;
+#X connect 18 1 4 1;
