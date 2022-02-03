@@ -3,7 +3,7 @@
 #000000 #000000;
 #X msg 50 90 all bang;
 #X msg 260 450 bang;
-#X obj 50 420 fc_object Part Loft;
+#X obj 50 420 fc_addObject Part Loft;
 #X text 130 90 send bang to every instances;
 #X text 90 150 clone returns the abstraction output preceed by the
 instance index \, so \$2 is the object name;

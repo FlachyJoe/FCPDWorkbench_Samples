@@ -7,7 +7,7 @@ Below is the list of sample with the used objects.
 ## 3d keyboard:
 Select the key in FreeCAD and ear sound from Pure-Data
 
-  * [fc_selObserver] 
+  * [fc_selObserver]
   * [fc_getObjectProperty]
 
 ## animator:
@@ -22,7 +22,7 @@ A keyframe-based animation recorder and player. See README in the directory.
 Use the [clone] object to parallelize 3d object creation.
 
   * [fc_list]
-  * [fc_object]
+  * [fc_addObject]
   * [fc_vector]
   * [fc_rotation]
   * [fc_placement]
@@ -51,7 +51,7 @@ Select a FreeCAD object and see an animate move.
 ## parametric_object_demo.pd
 Create a box and lets you use sliders to move it.
 
-  * [fc_object]
+  * [fc_addObject]
   * [fc_vector]
   * [fc_rotation]
   * [fc_placement]
