@@ -27,7 +27,7 @@
 #X obj 250 510 timer;
 #X msg 250 540 seed \$1;
 #X obj 250 569 random 50;
-#X obj 460 310 fc_object Part Loft;
+#X obj 460 310 fc_addObject Part Loft;
 #X obj 490 270 list prepend Sections;
 #X obj 220 330 t a b;
 #X obj 300 260 XYZvector 0 0 10;
