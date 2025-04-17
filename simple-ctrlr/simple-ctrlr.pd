@@ -1,0 +1,19 @@
+#N canvas 503 186 237 252 12;
+#N canvas 678 271 450 450 gui 1;
+#X obj 210 -20 vsl 15 128 0.1 10 0 1 empty empty Scale 0 -9 0 10 #fcfcfc
+#000000 #000000 200 1;
+#X obj 250 0 hsl 128 15 0 360 0 0 \$0-yaw empty Yaw -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 250 36 hsl 128 15 0 360 0 0 empty empty Pitch -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 250 70 hsl 128 15 0 360 0 0 empty empty Roll -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 90 250 fc_controler f r;
+#X obj 270 220 YPRrotation;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 5 1;
+#X connect 3 0 5 2;
+#X connect 5 0 4 1;
+#X coords 0 -1 1 1 212 152 2 184 -34;
+#X restore 10 10 pd gui;

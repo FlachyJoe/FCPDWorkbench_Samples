@@ -1,4 +1,4 @@
-#N canvas 495 163 846 793 12;
+#N canvas 573 127 807 710 12;
 #X obj 270 30 bng 30 250 50 0 empty empty Start! 30 10 0 20 #fcfcfc
 #000000 #000000;
 #X obj 350 310 *;
@@ -31,8 +31,8 @@
 #X obj 220 670 clone cloner 35;
 #X obj 390 550 expr $f1*sin(4./3*atan(1));
 #X text 470 530 pi = 4*atan(1);
-#X obj 220 150 fc_byLabel Tile;
-#X msg 220 500 all bang;
+#X obj 77 145 fc_byLabel Tile;
+#X msg 77 234 all bang;
 #X connect 0 0 22 0;
 #X connect 1 0 11 0;
 #X connect 2 0 4 0;
